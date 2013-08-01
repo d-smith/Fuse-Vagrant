@@ -1,6 +1,6 @@
 Fuse-Vagrant
 ============
-Configure a vagrant ubuntu instance (obtainerd via precise32) with java, maven, fuse, etc.
+Configure a vagrant ubuntu instance (obtained via precise32) with java, maven, fuse, etc.
 
 To use, first edit /etc/sudoers to add the following after the env_reset line.
 
@@ -14,4 +14,4 @@ Then, do the following:
     export https_proxy="http://http.proxy.fmr.com:8000"
     sudo apt-get install -y git-core
     git clone https://github.com/d-smith/Fuse-Vagrant
-    ./setup/setup.sh
+    ./Fuse-Vagrant/setup.sh
