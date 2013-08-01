@@ -18,3 +18,5 @@ sudo debconf-set-selections
 
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get -y install maven
+
+unzip $HOME/Fuse-Vagrant/snap99/jboss-fuse-minimal-99-master-SNAPSHOT.zip -d $HOME
