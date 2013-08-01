@@ -14,4 +14,4 @@ Then, do the following:
     export https_proxy="http://http.proxy.fmr.com:8000"
     sudo apt-get install -y git-core
     git clone https://github.com/d-smith/Fuse-Vagrant
-    ./Fuse-Vagrant/setup/setup.sh
+    ./Fuse-Vagrant/scripts/setup.sh
