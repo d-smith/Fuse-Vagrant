@@ -1,6 +1,6 @@
 Fuse-Vagrant
 ============
-Configure a vagrant ubuntu instance (obtained via precise32) with java, maven, fuse, etc.
+Configure a vagrant ubuntu instance (the precise32 or precise64 boxes) with java, maven, fuse, etc.
 
 To use, first edit /etc/sudoers to add the following after the env_reset line.
 
