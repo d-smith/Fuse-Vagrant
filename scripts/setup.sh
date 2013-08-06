@@ -21,6 +21,6 @@ sudo apt-get -y install maven
 
 # Download and unzip our Fuse distro
 cd $HOME
-wget http://vc2c09dal2306.fmr.com:9090/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
+wget http://vc2c09dal2306.fmr.com/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
 unzip jboss-fuse-full-6.0.0.redhat-024.zip
 
