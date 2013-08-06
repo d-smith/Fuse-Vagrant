@@ -1,6 +1,6 @@
 #!/bin/bash
 # Fuse environment setup
-udo apt-get purge openjdk*
+sudo apt-get purge openjdk*
 sudo apt-get update
 sudo apt-get -y install python-software-properties
 
@@ -19,4 +19,8 @@ sudo debconf-set-selections
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get -y install maven
 
-unzip $HOME/Fuse-Vagrant/snap99/jboss-fuse-minimal-99-master-SNAPSHOT.zip -d $HOME
+# Download and unzip our Fuse distro
+cd $HOME
+wget http://vc2c09dal2306.fmr.com:9090/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
+unzip jboss-fuse-full-6.0.0.redhat-024.zip
+
