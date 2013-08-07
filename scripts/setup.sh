@@ -19,6 +19,9 @@ sudo debconf-set-selections
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get -y install maven
 
+# Hmmm... sometimes unzip is not installed in the ubuntu image
+sudo apt-get install unzip
+
 # Download and unzip our Fuse distro
 cd $HOME
 wget http://vc2c09dal2306.fmr.com/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
