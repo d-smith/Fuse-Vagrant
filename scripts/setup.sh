@@ -27,3 +27,6 @@ cd $HOME
 wget http://vc2c09dal2306.fmr.com/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
 unzip jboss-fuse-full-6.0.0.redhat-024.zip
 
+# Write out custom Fuse config on top of the distro's
+cp Fuse-Vagrant/etc/org.ops4j.pax.url.mvn.cfg jboss-fuse-6.0.0.redhat-024/etc
+cp Fuse-Vagrant/etc/users.properties jboss-fuse-6.0.0.redhat-024/etc
