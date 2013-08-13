@@ -1,7 +1,7 @@
 This files can be used to test initial bootup of a container when configured
 with a local repository. This particulalar setup assumes that a local
 repository containing the feature and components associated with 
-[this]() 
+[this](https://github.com/d-smith/offline-repo-sample) 
 project have been built and the repository mapped to a shared file
 via vagrant settings, e.g.
 
