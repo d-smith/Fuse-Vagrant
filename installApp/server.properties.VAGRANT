@@ -1,0 +1,6 @@
+
+# VAGRANT
+VAGRANT.vip = *
+VAGRANT.jvmcount = 1
+VAGRANT.environment = VAGRANT
+

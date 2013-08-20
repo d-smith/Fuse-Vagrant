@@ -1,0 +1,83 @@
+# standard java properties file format, name=value pairs:
+
+APP_ID=103301
+BUILD_ID=XTRAC-INSTALLAPP-FUSE-ESB-EMBEDDED-BROKER
+
+# Environment related JVM_OPTS
+JAVA_OPTS_XMS=512
+JAVA_OPTS_XMX=2048
+JAVA_OPTS_PERM_MEM=32
+JAVA_OPTS_MAX_PERM_MEM=256
+JAVA_HTTP_PROXY_HOST=http.proxy.fmr.com
+JAVA_HTTP_PROXY_PORT=8000
+JAVA_HTTPS_PROXY_HOST=http.proxy.fmr.com
+JAVA_HTTPS_PROXY_PORT=8000
+
+# Database Connection
+DATABASE_HOST=xddv1covd.fmr.com
+DATABASE_PORT=1521
+DATABASE_SERVICE_NAME=XS69_APP
+DATABASE_USER=username-goes-here
+DATABASE_PASSWORD=password-here
+
+# Outbound end points
+MAVEN_REPOSITORIES=https://repo.fmr.com/content/groups/level0.xtrac/@snapshots@id=nexus-pro
+
+# Local Listener Ports 
+JETTY_PORT=9191
+KARAF_SSH_PORT=11350
+JMX_PORT=17100
+RMI_SERVER_PORT=17150
+
+# Embedded FUSE MQ broker listener
+ACTIVEMQ_BROKER_NAME=xtrac-broker
+ACTIVEMQ_PORT=17200
+
+# Container related users and access control settings
+ACTIVEMQ_USER=smx
+ACTIVEMQ_PASSWORD=smx
+WEBCONSOLE_USER=smx
+WEBCONSOLE_PASSWORD=smx
+ADMIN_USER=smx=smx,admin
+
+# ActiveMQ Broker simple Authentication Plugin settings
+# set ACTIVEMQ_ANONYMOUS_ACCESS_ALLOWED=false to disable anonymous access
+# By default, with anonymous access enabled, when a client without credentials connects to the broker, it is automatically assigned the username, anonymous, and the group ID, anonymous.
+ACTIVEMQ_ANONYMOUS_ACCESS_ALLOWED=false
+ACTIVEMQ_ANONYMOUS_USER=anonymous
+ACTIVEMQ_ANONYMOUS_GROUPS=anonymous
+
+ACTIVEMQ_ADMIN_USER=xt-broker-admin
+ACTIVEMQ_ADMIN_PASSWORD=password
+ACTIVEMQ_ADMIN_GROUPS=admins
+
+ACTIVEMQ_PRODUCER_CONSUMER_USER=xt-broker-producer-consumer
+ACTIVEMQ_PRODUCER_CONSUMER_PASSWORD=password
+ACTIVEMQ_PRODUCER_CONSUMER_GROUPS=producers,consumers
+
+ACTIVEMQ_PRODUCER_USER=xt-broker-producer
+ACTIVEMQ_PRODUCER_PASSWORD=password
+ACTIVEMQ_PRODUCER_GROUPS=producers
+
+ACTIVEMQ_CONSUMER_USER=xt-broker-consumer
+ACTIVEMQ_CONSUMER_PASSWORD=password
+ACTIVEMQ_CONSUMER_GROUPS=consumers
+
+# Default Features Repositories and Default Features loaded at FUSE Boot
+FEATURES_REPOSITORIES=mvn:org.apache.karaf.assemblies.features/standard/2.3.0.redhat-60024/xml/features,\
+        mvn:org.apache.karaf.assemblies.features/enterprise/2.3.0.redhat-60024/xml/features,\
+        mvn:org.apache.cxf.karaf/apache-cxf/2.6.0.redhat-60024/xml/features,\
+        mvn:org.apache.camel.karaf/apache-camel/2.10.0.redhat-60024/xml/features,\
+        mvn:org.apache.activemq/activemq-karaf/5.8.0.redhat-60024/xml/features,\
+        mvn:org.apache.servicemix.nmr/apache-servicemix-nmr/1.6.0.redhat-60024/xml/features,\
+        mvn:org.fusesource.fabric/fuse-fabric/7.2.0.redhat-024/xml/features,\
+        mvn:org.jboss.fuse/jboss-fuse/6.0.0.redhat-024/xml/features,\
+        mvn:org.fusesource.patch/patch-features/7.2.0.redhat-024/xml/features
+
+
+
+FEATURES_BOOT=jasypt-encryption,config,management,fabric-boot-commands,fabric-bundle,fabric-maven-proxy,patch,activemq,mq-fabric,camel,camel-cxf,camel-jms,activemq-camel,camel-blueprint,camel-csv,camel-ftp,camel-bindy,camel-jdbc,camel-exec,camel-jasypt,camel-saxon,camel-snmp,camel-ognl,camel-routebox,camel-script,camel-spring-javaconfig,camel-jaxb,camel-jetty,camel-jmx,camel-mail,camel-paxlogging,camel-rmi,war,cxf,camel-servlet
+
+# Karaf Name for the Fabric
+KARAF_NAME=noderoot01
+
