@@ -23,3 +23,17 @@ Once the guest OS is prepared, install the jboss Fuse distro via
 Or install fuse using the installApp package via
 
     ./Fuse-Vagrant/scripts/setup-install-app.sh
+
+When using the installApp installation, some manual reconfiguration is
+needed post install to bind jetty to the localhost address such that
+port mapping from the host OS to the guest OS works. To do this:
+
+    cd /apps/fuse_esb/xtrac-jboss-1.0.5.2/fmr-bin
+    ./stopAll.ksh
+    sed -i.bak s/default=\"precise64.fmr.com\"//g ../installedApps/etc/jetty.xml
+    ./startAll.ksh
+    netstat -l -n|grep 9191
+
+Once the above steps have been performed you should be able to bring up the
+webconsole assuming you've enabled port forwarding in your vagrant
+configuration.
