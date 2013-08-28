@@ -21,7 +21,7 @@ DATABASE_USER=username-goes-here
 DATABASE_PASSWORD=password-here
 
 # Outbound end points
-MAVEN_REPOSITORIES=https://repo.fmr.com/content/groups/level0.xtrac/@snapshots@id=nexus-pro
+MAVEN_REPOSITORIES=
 
 # Local Listener Ports 
 JETTY_PORT=9191
