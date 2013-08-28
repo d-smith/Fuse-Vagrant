@@ -20,9 +20,6 @@ DATABASE_SERVICE_NAME=XS69_APP
 DATABASE_USER=username-goes-here
 DATABASE_PASSWORD=password-here
 
-# Outbound end points
-MAVEN_REPOSITORIES=
-
 # Local Listener Ports 
 JETTY_PORT=9191
 KARAF_SSH_PORT=11350

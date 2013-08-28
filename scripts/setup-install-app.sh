@@ -37,4 +37,7 @@ cp ~/Fuse-Vagrant/installApp/setenv .
 cd /apps
 echo VAGRANT > envid
 cd /apps/fuse_esb/xtrac-jboss-poc-1.0/app-bin
-./installApp.ksh
+## Need to do additional configuration before installApp.ksh can be run,
+## specifically creating the xtrac-repos directory and copying the custom 
+## repositories under xtrac-repos, and referecing the customer repositories
+## as default repos in the org ops4j pax mvn url config file.
