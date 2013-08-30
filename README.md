@@ -17,6 +17,7 @@ Then, do the following to prep the guest OS:
     ./Fuse-Vagrant/scripts/install-prereqs.sh
 
 Note: you can actually add a provisioning line to Vagrantfile that references the above commands in a shell script, e.g.
+
     config.vm.provision :shell, :path => "bootstrap.sh"
     
 Where bootstrap.sh is in the same directory as Vagrantfile. Note that for apt-get to work bootstrap.sh will need to start with the following two lines:
