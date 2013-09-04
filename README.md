@@ -36,6 +36,8 @@ Or install fuse using the installApp package via
 
     ./Fuse-Vagrant/scripts/setup-install-app.sh
 
+Note for both the installApp and jboss installs, if you place the installApp or jboss distros in your vagrant directory, the distribution will be read via the /vagrant mount point. If not present in /vagrant, the distribution will be obtained from a local web service via wget.
+
 When using the installApp installation, some manual reconfiguration is
 needed post install to bind jetty to the localhost address such that
 port mapping from the host OS to the guest OS works. To do this:

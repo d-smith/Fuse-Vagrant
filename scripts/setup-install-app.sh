@@ -1,9 +1,9 @@
 #Copy a locally cached installApp distro from a shared folder, or 
 #download one if not present
 cd $HOME
-if [ -e /distros/fuse/xtrac-jboss-poc-1.0.zip ]
+if [ -e /vagrant/xtrac-jboss-poc-1.0.zip ]
 then
-	cp /distros/fuse/xtrac-jboss-poc-1.0.zip $HOME
+	cp /vagrant/xtrac-jboss-poc-1.0.zip $HOME
 else
 	wget http://vc2c09dal2306.fmr.com/installApp/xtrac-jboss-poc-1.0.zip
 fi

@@ -21,3 +21,8 @@ sudo apt-get -y install maven
 
 # Hmmm... sometimes unzip is not installed in the ubuntu image
 sudo apt-get install unzip
+
+# Apache
+apt-get update
+apt-get install -y apache2
+
