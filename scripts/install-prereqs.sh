@@ -26,5 +26,6 @@ sudo apt-get install unzip
 sudo apt-get update
 sudo apt-get install -y apache2
 
-
+# Subversion
+sudo apt-get install -y subversion
 
