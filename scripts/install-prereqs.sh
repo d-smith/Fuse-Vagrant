@@ -23,6 +23,8 @@ sudo apt-get -y install maven
 sudo apt-get install unzip
 
 # Apache
-apt-get update
-apt-get install -y apache2
+sudo apt-get update
+sudo apt-get install -y apache2
+
+
 
