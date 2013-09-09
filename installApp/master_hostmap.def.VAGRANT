@@ -78,3 +78,7 @@ FEATURES_BOOT=jasypt-encryption,config,management,fabric-boot-commands,fabric-bu
 # Karaf Name for the Fabric
 KARAF_NAME=noderoot01
 
+#Property values for the sample feature
+SAMPLE_BROKER_URL=vm://amq
+SAMPLE_USER_NAME=smx
+SAMPLE_PASSWORD=smx
