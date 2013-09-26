@@ -42,7 +42,7 @@ When using the installApp installation, some manual reconfiguration is
 needed post install to bind jetty to the localhost address such that
 port mapping from the host OS to the guest OS works. To do this:
 
-    cd /apps/fuse_esb/xtrac-jboss-1.0.5.2/fmr-bin
+    cd /apps/fuse_esb/xtrac-jboss-poc-1.2/fmr-bin
     ./stopAll.ksh
     sed -i.bak s/default=\"precise64.fmr.com\"//g ../installedApps/etc/jetty.xml
     cp ~/Fuse-Vagrant/optional/local-repo-sample/activemq.xml ../installedApps/etc
