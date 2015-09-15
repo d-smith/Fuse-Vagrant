@@ -10,8 +10,8 @@ To use, first edit /etc/sudoers to add the following after the env_reset line.
 Then, do the following to prep the guest OS:
 
     cd $HOME
-    export http_proxy="http://http.proxy.fmr.com:8000"
-    export https_proxy="http://http.proxy.fmr.com:8000"
+    export http_proxy="http://<proxy host>:<proxy port>"
+    export https_proxy="http://<proxy host>:<proxy port>"
     sudo apt-get install -y git-core
     git clone https://github.com/d-smith/Fuse-Vagrant
     ./Fuse-Vagrant/scripts/install-prereqs.sh
@@ -22,8 +22,8 @@ Note: you can actually add a provisioning line to Vagrantfile that references th
     
 Where bootstrap.sh is in the same directory as Vagrantfile. Note that for apt-get to work bootstrap.sh will need to start with the following two lines:
 
-    sudo echo 'Acquire::http::Proxy "http://http.proxy.fmr.com:8000";' > /etc/apt/apt.conf
-    sudo echo 'Aquire:https:Proxy "http://http.proxy.fmr.com:8000";' >> /etc/apt/apt.conf
+    sudo echo 'Acquire::http::Proxy "http:///<proxy host>:<proxy port>";' > /etc/apt/apt.conf
+    sudo echo 'Aquire:https:Proxy "http://<proxy host>:<proxy port>";' >> /etc/apt/apt.conf
     
 Refer to [bootstrap.sh](./bootstrap.sh) for an example.
 
