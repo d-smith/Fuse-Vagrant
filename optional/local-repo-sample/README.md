@@ -5,7 +5,7 @@ repository containing the feature and components associated with
 project have been built and the repository mapped to a shared file
 via vagrant settings, e.g.
 
-    config.vm.synced_folder "/Users/a045103.dmn1/code/offline-repo-sample/custom-repo/target/features-repo", "/repos/features-repo"
+    config.vm.synced_folder "/Users/username/code/offline-repo-sample/custom-repo/target/features-repo", "/repos/features-repo"
 
 The second repository provides the common xtrac dependencies and feature binaries.
 
