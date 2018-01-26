@@ -30,7 +30,7 @@ if [ -e /distros/fuse/jboss-fuse-full-6.0.0.redhat-024.zip ]
 then
 	cp /distros/fuse/jboss-fuse-full-6.0.0.redhat-024.zip $HOME
 else
-	wget http://vc2c09dal2306.fmr.com/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
+	wget http://h.yoyo.com/fuse/jboss-fuse-full-6.0.0.redhat-024.zip
 fi
 
 unzip jboss-fuse-full-6.0.0.redhat-024.zip

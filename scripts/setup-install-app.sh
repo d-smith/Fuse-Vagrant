@@ -5,19 +5,19 @@ if [ -e /vagrant/xtrac-jboss-poc-1.5.zip ]
 then
 	cp /vagrant/xtrac-jboss-poc-1.5.zip $HOME
 else
-	wget http://vc2c09dal2306.fmr.com/installApp/xtrac-jboss-poc-1.5.zip
+	wget http://h1.yoyyoyo.com/installApp/xtrac-jboss-poc-1.5.zip
 fi
 
 # Install ksh as the installApp scripts use the ksh
 sudo apt-get install ksh
 
-#Edit /etc/hosts and /etc/hostname to append fmr.com after the precise64
+#Edit /etc/hosts and /etc/hostname to append yoyo.com after the precise64
 #hostname. We will also attempt to do the same thing for precise32;
 #I have not tested this with precise32
-sudo sed -i.bak s/precise64/'precise64.fmr.com precise64'/g /etc/hosts
-sudo sed -i.bak s/precise64/precise64.fmr.com/g /etc/hostname
-sudo sed -i.bak s/precise32/'precise32.fmr.com precise 32'/g /etc/hosts
-sudo sed -i.bak s/precise32/precise32.fmr.com/g /etc/hostname
+sudo sed -i.bak s/precise64/'precise64.yoyo.com precise64'/g /etc/hosts
+sudo sed -i.bak s/precise64/precise64.yoyo.com/g /etc/hostname
+sudo sed -i.bak s/precise32/'precise32.yoyo.com precise 32'/g /etc/hosts
+sudo sed -i.bak s/precise32/precise32.yoyo.com/g /etc/hostname
 
 #Create the apps directory, make vagrant the owner, copy the distro
 sudo mkdir /apps
